@@ -70,6 +70,7 @@
     const open = links.classList.toggle('open');
     burger.setAttribute('aria-expanded', open);
   });
+  addEventListener('keydown', e => { if (e.key === 'Escape' && links.classList.contains('open')) { links.classList.remove('open'); burger.setAttribute('aria-expanded', false); burger.focus(); } });
   const onScroll = () => nav.classList.toggle('scrolled', scrollY > 40);
   addEventListener('scroll', onScroll, { passive: true }); onScroll();
 

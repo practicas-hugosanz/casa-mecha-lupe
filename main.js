@@ -18,6 +18,7 @@
   $$('a', links).forEach(a => a.addEventListener('click', () => {
     links.classList.remove('open'); burger.setAttribute('aria-expanded', false); onScrollNav();
   }));
+  addEventListener('keydown', e => { if (e.key === 'Escape' && links.classList.contains('open')) { links.classList.remove('open'); burger.setAttribute('aria-expanded', false); onScrollNav(); burger.focus(); } });
 
   /* ---------- awnings ---------- */
   const buildAwning = el => {
