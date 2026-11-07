@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /_fuentes/
+
+Sitemap: https://practicas-hugosanz.github.io/casa-mecha-lupe/sitemap.xml

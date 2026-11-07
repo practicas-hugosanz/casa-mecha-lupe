@@ -1,0 +1,568 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--
+  SEO: la web está publicada provisionalmente en GitHub Pages.
+  Cuando haya dominio propio, sustituye "https://practicas-hugosanz.github.io/casa-mecha-lupe/" por él en:
+  canonical, hreflang, Open Graph, Twitter, datos estructurados (JSON-LD), robots.txt y sitemap.xml.
+-->
+<title>Casa Mecha y Casa Lupe | Tacos, brioches y helados en Elche</title>
+<meta name="description" content="Tacos, brioches y totopos en Casa Mecha; helados, granizados y repostería en Casa Lupe. Carrer Empedrat, 21, Elche. De miércoles a domingo desde las 19:00.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://practicas-hugosanz.github.io/casa-mecha-lupe/">
+<link rel="alternate" hreflang="es" href="https://practicas-hugosanz.github.io/casa-mecha-lupe/">
+<meta name="theme-color" content="#B1262A">
+<meta name="author" content="Casa Mecha · Casa Lupe">
+<meta name="geo.region" content="ES-A">
+<meta name="geo.placename" content="Elche">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<meta property="og:site_name" content="Casa Mecha y Casa Lupe">
+<meta property="og:title" content="Casa Mecha y Casa Lupe | Tacos, brioches y helados en Elche">
+<meta property="og:description" content="Cocina salada y heladería en un mismo local, en el Carrer Empedrat, 21 de Elche. Tacos, brioches y totopos en Casa Mecha; helados, granizados y repostería en Casa Lupe.">
+<meta property="og:url" content="https://practicas-hugosanz.github.io/casa-mecha-lupe/">
+<meta property="og:image" content="https://practicas-hugosanz.github.io/casa-mecha-lupe/img/og-casa-mecha-casa-lupe.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Logotipos de Casa Mecha y Casa Lupe sobre fondo rojo y azul">
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Casa Mecha y Casa Lupe | Tacos, brioches y helados en Elche">
+<meta name="twitter:description" content="Cocina salada y heladería en un mismo local en Elche.">
+<meta name="twitter:image" content="https://practicas-hugosanz.github.io/casa-mecha-lupe/img/og-casa-mecha-casa-lupe.jpg">
+
+<!-- Iconos -->
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="icons/favicon-48.png">
+<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+
+<!-- Rendimiento -->
+<link rel="preload" as="image" href="img/brand/mecha-stamp.png" fetchpriority="high">
+<link rel="preload" as="image" href="img/brand/lupe-stamp.png" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bowlby+One&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Lilita+One&family=Sacramento&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+<!-- Datos estructurados -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://practicas-hugosanz.github.io/casa-mecha-lupe/#website",
+      "url": "https://practicas-hugosanz.github.io/casa-mecha-lupe/",
+      "name": "Casa Mecha y Casa Lupe",
+      "inLanguage": "es-ES"
+    },
+    {
+      "@type": "Restaurant",
+      "@id": "https://practicas-hugosanz.github.io/casa-mecha-lupe/#casa-mecha",
+      "name": "Casa Mecha",
+      "description": "Tacos, brioches y totopos.",
+      "url": "https://practicas-hugosanz.github.io/casa-mecha-lupe/",
+      "logo": "https://practicas-hugosanz.github.io/casa-mecha-lupe/img/brand/mecha-icon.png",
+      "image": [
+        "https://practicas-hugosanz.github.io/casa-mecha-lupe/img/fachada-casa-mecha.webp",
+        "https://practicas-hugosanz.github.io/casa-mecha-lupe/img/tacos-casa-mecha.webp",
+        "https://practicas-hugosanz.github.io/casa-mecha-lupe/img/brioches-casa-mecha.webp"
+      ],
+      "servesCuisine": ["Tacos", "Brioches", "Nachos"],
+      "priceRange": "€",
+      "currenciesAccepted": "EUR",
+      "hasMap": "https://share.google/Yfrjxu4EgjBZK6gms",
+      "sameAs": ["https://www.instagram.com/casamecha__/"],
+      "telephone": "+34 603 08 81 58",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Carrer Empedrat, 21",
+        "addressLocality": "Elche",
+        "addressRegion": "Alicante",
+        "postalCode": "03203",
+        "addressCountry": "ES"
+      },
+      "areaServed": "Elche",
+      "openingHoursSpecification": [
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Wednesday", "Thursday", "Sunday"], "opens": "19:00", "closes": "23:59"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday", "Saturday"], "opens": "19:00", "closes": "02:00"}
+      ],
+      "hasMenu": {
+        "@type": "Menu",
+        "name": "Carta de Casa Mecha",
+        "inLanguage": "es-ES",
+        "hasMenuSection": [
+          {
+            "@type": "MenuSection",
+            "name": "Tacos",
+            "hasMenuItem": [
+              {"@type": "MenuItem", "name": "Taco Pollo Mecha", "offers": {"@type": "Offer", "price": "3.50", "priceCurrency": "EUR"}},
+              {"@type": "MenuItem", "name": "Taco Atún Mecha", "offers": {"@type": "Offer", "price": "3.50", "priceCurrency": "EUR"}}
+            ]
+          },
+          {
+            "@type": "MenuSection",
+            "name": "Brioche",
+            "hasMenuItem": [
+              {"@type": "MenuItem", "name": "Brioche de wagyu japonés", "offers": {"@type": "Offer", "price": "3.80", "priceCurrency": "EUR"}},
+              {"@type": "MenuItem", "name": "Brioche de jamón ibérico", "offers": {"@type": "Offer", "price": "3.80", "priceCurrency": "EUR"}}
+            ]
+          },
+          {
+            "@type": "MenuSection",
+            "name": "Totopos (nachos)",
+            "hasMenuItem": [
+              {"@type": "MenuItem", "name": "Totopos con pico de gallo y guacamole", "offers": {"@type": "Offer", "price": "3.80", "priceCurrency": "EUR"}},
+              {"@type": "MenuItem", "name": "Totopos con pulled de cerdo y cheddar", "offers": {"@type": "Offer", "price": "3.80", "priceCurrency": "EUR"}}
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "@type": "IceCreamShop",
+      "@id": "https://practicas-hugosanz.github.io/casa-mecha-lupe/#casa-lupe",
+      "name": "Casa Lupe",
+      "description": "Helados, granizados y repostería.",
+      "url": "https://practicas-hugosanz.github.io/casa-mecha-lupe/",
+      "logo": "https://practicas-hugosanz.github.io/casa-mecha-lupe/img/brand/lupe-icon.png",
+      "image": [
+        "https://practicas-hugosanz.github.io/casa-mecha-lupe/img/fachada-casa-lupe-tarrina-helado.webp",
+        "https://practicas-hugosanz.github.io/casa-mecha-lupe/img/cucurucho-helado-casa-lupe.jpg",
+        "https://practicas-hugosanz.github.io/casa-mecha-lupe/img/berlina-helado-pistacho.webp"
+      ],
+      "servesCuisine": ["Helados", "Granizados", "Repostería"],
+      "priceRange": "€",
+      "currenciesAccepted": "EUR",
+      "hasMap": "https://share.google/ymw1GrEiolH3452Vb",
+      "sameAs": ["https://www.instagram.com/casalupe__/"],
+      "telephone": "+34 603 08 81 58",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Carrer Empedrat, 21",
+        "addressLocality": "Elche",
+        "addressRegion": "Alicante",
+        "postalCode": "03203",
+        "addressCountry": "ES"
+      },
+      "areaServed": "Elche",
+      "openingHoursSpecification": [
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], "opens": "19:00", "closes": "23:59"}
+      ],
+      "hasMenu": {
+        "@type": "Menu",
+        "name": "Carta de Casa Lupe",
+        "inLanguage": "es-ES",
+        "hasMenuSection": [
+          {
+            "@type": "MenuSection",
+            "name": "Granizados",
+            "hasMenuItem": [
+              {"@type": "MenuItem", "name": "Granizado de limón", "offers": {"@type": "Offer", "price": "2.00", "priceCurrency": "EUR"}},
+              {"@type": "MenuItem", "name": "Granizado de horchata", "offers": {"@type": "Offer", "price": "2.20", "priceCurrency": "EUR"}},
+              {"@type": "MenuItem", "name": "Granizado de café", "offers": {"@type": "Offer", "price": "2.20", "priceCurrency": "EUR"}},
+              {"@type": "MenuItem", "name": "Granizado de leche preparada", "offers": {"@type": "Offer", "price": "2.20", "priceCurrency": "EUR"}}
+            ]
+          },
+          {
+            "@type": "MenuSection",
+            "name": "Tarrinas de helado",
+            "description": "Con 1 topping a elegir. Sabores: queso, vainilla, nata, mantecado, pistacho, chocolate Dubái, dulce de leche, chocolate, black cookies, fresa y Kinder Bueno. Topping extra: 0,80 €.",
+            "hasMenuItem": [
+              {"@type": "MenuItem", "name": "Tarrina pequeña", "offers": {"@type": "Offer", "price": "1.90", "priceCurrency": "EUR"}},
+              {"@type": "MenuItem", "name": "Tarrina mediana", "offers": {"@type": "Offer", "price": "3.50", "priceCurrency": "EUR"}},
+              {"@type": "MenuItem", "name": "Tarrina grande", "offers": {"@type": "Offer", "price": "4.90", "priceCurrency": "EUR"}}
+            ]
+          },
+          {
+            "@type": "MenuSection",
+            "name": "Repostería",
+            "hasMenuItem": [
+              {"@type": "MenuItem", "name": "Berlina con helado y 1 topping", "offers": {"@type": "Offer", "price": "4.40", "priceCurrency": "EUR"}},
+              {"@type": "MenuItem", "name": "Fartón", "offers": {"@type": "Offer", "price": "0.80", "priceCurrency": "EUR"}},
+              {"@type": "MenuItem", "name": "Buñuelos con pistacho (3 uds.)", "offers": {"@type": "Offer", "price": "2.00", "priceCurrency": "EUR"}},
+              {"@type": "MenuItem", "name": "Bizcocho de manzana y canela", "offers": {"@type": "Offer", "price": "1.50", "priceCurrency": "EUR"}}
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip" href="#concepto">Saltar al contenido</a>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <a href="#top" class="nav-brand" aria-label="Casa Mecha y Casa Lupe, inicio">
+    <img src="icons/logo.png?v=3" alt="" class="nb-logo" width="36" height="36">
+    <span class="nb-text"><b class="t-m">MECHA</b><i>/</i><b class="t-l">LUPE</b></span>
+  </a>
+  <nav class="nav-links" id="navLinks" aria-label="Principal">
+    <a href="#concepto">Concepto</a>
+    <a href="#carta">Carta</a>
+    <a href="#galeria">Galería</a>
+    <a href="#local">El local</a>
+    <a href="#visitanos">Visítanos</a>
+  </nav>
+  <a href="#carta" class="nav-cta">Ver carta</a>
+  <button class="nav-burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks"><span></span><span></span></button>
+</header>
+
+<main>
+<!-- ============ HERO ============ -->
+<section class="hero" id="top" aria-label="Casa Mecha y Casa Lupe">
+  <div class="awning" data-awning></div>
+
+  <div class="hero-half h-mecha">
+    <div class="hero-inner">
+      <img src="img/brand/mecha-stamp.png" alt="Logotipo de Casa Mecha" class="hero-stamp" width="952" height="1020" fetchpriority="high" data-float>
+      <p class="hero-kicker">salado</p>
+      <p class="hero-items"><span>Tacos</span><span>Brioche</span><span>Totopos</span></p>
+    </div>
+  </div>
+
+  <div class="hero-half h-lupe">
+    <div class="flame flame-v" aria-hidden="true"></div>
+    <div class="flame flame-h" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <img src="img/brand/lupe-stamp.png" alt="Logotipo de Casa Lupe" class="hero-stamp" width="973" height="1020" fetchpriority="high" data-float>
+      <p class="hero-kicker">dulce</p>
+      <p class="hero-items"><span>Helados</span><span>Granizados</span><span>Repostería</span></p>
+    </div>
+  </div>
+
+  <span class="hero-amp" aria-hidden="true">&amp;</span>
+
+  <svg class="badge" viewBox="0 0 200 200" aria-hidden="true">
+    <defs><path id="circ" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs>
+    <circle cx="100" cy="100" r="96" class="badge-bg"/>
+    <text><textPath href="#circ">CASA MECHA ✦ CASA LUPE ✦ DESDE 2026 ✦ </textPath></text>
+    <text x="100" y="114" text-anchor="middle" class="badge-mid">2026</text>
+  </svg>
+
+  <a href="#concepto" class="scroll-cue">
+    <span>Descubrir</span>
+    <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 4v16m0 0-6-6m6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </a>
+</section>
+
+<!-- ============ CONCEPTO ============ -->
+<section class="abuelas" id="concepto">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <h1 class="big"><span class="sr-only">Casa Mecha y Casa Lupe en Elche: </span>Cocina <span class="c-m">salada</span> y <span class="c-l">dulce</span> <br>en un mismo local.</h1>
+      <p class="lead"><strong>Casa Mecha</strong> sirve tacos, brioches y totopos. <strong>Casa Lupe</strong> prepara helados, granizados y repostería tradicional. Dos marcas que comparten fachada en el Carrer Empedrat de Elche y se complementan: una para comer, la otra para el postre.</p>
+    </header>
+
+    <div class="grannies">
+      <article class="granny g-mecha reveal" data-tilt>
+        <div class="g-top">
+          <img src="img/brand/mecha-face-cream.png" alt="" class="g-face" width="250" height="300" loading="lazy">
+          <div>
+            <p class="g-casa" aria-hidden="true">casa</p>
+            <h2 class="g-name"><span class="sr-only">Casa </span>Mecha</h2>
+          </div>
+        </div>
+        <p class="g-desc">Tacos de pollo y de atún, brioches de wagyu japonés y de jamón ibérico, y totopos para compartir.</p>
+        <ul class="g-list">
+          <li><span>Tacos</span><span>3,50€</span></li>
+          <li><span>Brioche</span><span>3,80€</span></li>
+          <li><span>Totopos</span><span>3,80€</span></li>
+        </ul>
+        <a href="https://www.instagram.com/casamecha__/" target="_blank" rel="noopener noreferrer" class="g-link">Instagram · @casamecha__ <span aria-hidden="true">→</span></a>
+        <img src="img/taco-casa-mecha.webp" alt="Taco de Casa Mecha con sésamo negro" class="g-photo" width="680" height="1020" loading="lazy" decoding="async">
+      </article>
+
+      <div class="vs reveal" aria-hidden="true"><span>&amp;</span></div>
+
+      <article class="granny g-lupe reveal" data-tilt>
+        <div class="g-top">
+          <img src="img/brand/lupe-face-cream.png" alt="" class="g-face" width="305" height="350" loading="lazy">
+          <div>
+            <p class="g-casa" aria-hidden="true">casa</p>
+            <h2 class="g-name"><span class="sr-only">Casa </span>Lupe</h2>
+          </div>
+        </div>
+        <p class="g-desc">Helados en once sabores, granizados de limón, horchata y café, y repostería como fartons y buñuelos de pistacho.</p>
+        <ul class="g-list">
+          <li><span>Granizados</span><span>desde 2,00€</span></li>
+          <li><span>Tarrinas</span><span>desde 1,90€</span></li>
+          <li><span>Repostería</span><span>desde 0,80€</span></li>
+        </ul>
+        <a href="https://www.instagram.com/casalupe__/" target="_blank" rel="noopener noreferrer" class="g-link">Instagram · @casalupe__ <span aria-hidden="true">→</span></a>
+        <img src="img/cucurucho-helado-casa-lupe.jpg" alt="Cucurucho de helado de nata de Casa Lupe con perlas de chocolate" class="g-photo" width="680" height="1020" loading="lazy" decoding="async">
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TILE BAND ============ -->
+<div class="tiles" id="tiles" aria-hidden="true"></div>
+
+<!-- ============ CARTA ============ -->
+<section class="carta" id="carta" aria-labelledby="carta-title">
+  <div class="awning" data-awning></div>
+
+  <div class="carta-head">
+    <img src="img/brand/mecha-icon.png" alt="" class="ch-face ch-m" width="484" height="603" loading="lazy">
+    <h2 class="carta-title reveal" id="carta-title">Carta<span class="sr-only"> de Casa Mecha y Casa Lupe</span></h2>
+    <img src="img/brand/lupe-icon.png" alt="" class="ch-face ch-l" width="519" height="602" loading="lazy">
+  </div>
+
+  <div class="carta-switch" role="tablist" aria-label="Elegir carta">
+    <button role="tab" aria-selected="true" data-side="mecha">Casa Mecha</button>
+    <button role="tab" aria-selected="false" data-side="lupe">Casa Lupe</button>
+    <span class="cs-pill"></span>
+  </div>
+
+  <div class="carta-grid" data-active="mecha">
+    <!-- MECHA -->
+    <div class="carta-col col-mecha">
+      <p class="col-tag">Casa Mecha</p>
+
+      <div class="cat reveal" data-peek="img/tacos-casa-mecha.webp">
+        <h3 class="cat-h">
+          <svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M6 32a18 18 0 0 1 36 0z" /><path d="M12 30c2-6 6-9 12-9s10 3 12 9" /><circle cx="18" cy="26" r="1.6"/><circle cx="26" cy="24" r="1.6"/><circle cx="31" cy="27" r="1.6"/></svg>
+          <span>Tacos </span><span class="price">3,50€</span>
+        </h3>
+        <ul class="cat-list"><li>Pollo Mecha</li><li>Atún Mecha</li></ul>
+      </div>
+
+      <div class="cat reveal" data-peek="img/brioches-casa-mecha.webp">
+        <h3 class="cat-h">
+          <svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 26c0-8 7-14 16-14s16 6 16 14z"/><path d="M8 30h32"/><path d="M10 34h28a3 3 0 0 1-3 4H13a3 3 0 0 1-3-4z"/><path d="M18 18l1 2M25 16l.5 2M31 19l-1 2"/></svg>
+          <span>Brioche </span><span class="price">3,80€</span>
+        </h3>
+        <ul class="cat-list"><li>Wagyu japonés</li><li>Jamón ibérico</li></ul>
+      </div>
+
+      <div class="cat reveal" data-peek="img/brioche-pulled-casa-mecha.webp">
+        <h3 class="cat-h">
+          <svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 38 20 10l12 28z"/><path d="M24 38l8-20 10 20z"/><circle cx="18" cy="28" r="1.4"/><circle cx="34" cy="31" r="1.4"/></svg>
+          <span>Totopos <small>nachos</small> </span><span class="price">3,80€</span>
+        </h3>
+        <ul class="cat-list"><li>Pico de gallo y guacamole</li><li>Pulled de cerdo y cheddar</li></ul>
+      </div>
+    </div>
+
+    <div class="carta-flame" aria-hidden="true"></div>
+
+    <!-- LUPE -->
+    <div class="carta-col col-lupe">
+      <p class="col-tag">Casa Lupe</p>
+
+      <div class="cat reveal">
+        <h3 class="cat-h serif">
+          <svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M12 16h24l-3 26H15z"/><path d="M10 16h28"/><path d="M26 16l6-10h4"/></svg>
+          <span>Granizados</span>
+        </h3>
+        <ul class="cat-list priced">
+          <li><span>Limón</span><span>2,00€</span></li>
+          <li><span>Horchata</span><span>2,20€</span></li>
+          <li><span>Café</span><span>2,20€</span></li>
+          <li><span>Leche preparada</span><span>2,20€</span></li>
+        </ul>
+      </div>
+
+      <div class="cat reveal" data-peek="img/fachada-casa-lupe-tarrina-helado.webp">
+        <h3 class="cat-h serif">
+          <svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M10 24h28l-4 16H14z"/><path d="M14 24a10 10 0 0 1 20 0"/><path d="M19 15c1-2 3-3 5-3"/></svg>
+          <span>Tarrinas <small>con 1 topping a elegir</small></span>
+        </h3>
+        <ul class="cat-list priced">
+          <li><span>Pequeña</span><span>1,90€</span></li>
+          <li><span>Mediana</span><span>3,50€</span></li>
+          <li><span>Grande</span><span>4,90€</span></li>
+        </ul>
+        <p class="sabores-h">Sabores</p>
+        <ul class="sabores" id="saboresList">
+          <li><i style="background:#F6E3A8"></i>Queso</li>
+          <li><i style="background:#F8EBC8"></i>Vainilla</li>
+          <li><i style="background:#FFFDF6"></i>Nata</li>
+          <li><i style="background:#F2D27E"></i>Mantecado</li>
+          <li><i style="background:#A9C77A"></i>Pistacho</li>
+          <li><i style="background:#7B5A36"></i>Chocolate Dubái</li>
+          <li><i style="background:#C98A4B"></i>Dulce de leche</li>
+          <li><i style="background:#5A3522"></i>Chocolate</li>
+          <li><i style="background:#3E3533"></i>Black Cookies</li>
+          <li><i style="background:#F28BA0"></i>Fresa</li>
+          <li><i style="background:#D8AF80"></i>Kinder Bueno</li>
+        </ul>
+        <p class="extra"><span>+ 1 topping extra</span><span>0,80€</span></p>
+      </div>
+
+      <div class="cat reveal" data-peek="img/berlina-helado-pistacho.webp">
+        <h3 class="cat-h serif">
+          <svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><ellipse cx="24" cy="26" rx="17" ry="11"/><ellipse cx="24" cy="25" rx="5" ry="3"/><path d="M12 22c3-3 7-4 12-4s9 1 12 4"/></svg>
+          <span>Repostería</span>
+        </h3>
+        <ul class="cat-list priced">
+          <li><span>Berlina <small>con helado + 1 topping</small></span><span>4,40€</span></li>
+          <li><span>Fartón</span><span>0,80€</span></li>
+          <li><span>Buñuelos <small>con pistacho (3 uds.)</small></span><span>2,00€</span></li>
+          <li><span>Bizcocho <small>de manzana y canela</small></span><span>1,50€</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALERÍA (horizontal) ============ -->
+<section class="cocina" id="galeria" aria-labelledby="galeria-title">
+  <div class="cocina-sticky">
+    <header class="cocina-head">
+      <h2 class="gal-title" id="galeria-title">Galería<span class="sr-only"> de Casa Mecha y Casa Lupe</span></h2>
+      <div class="gal-side">
+        <p>Platos, rincones y detalles del local. Más fotos en Instagram.</p>
+        <div class="gal-links">
+          <a href="https://www.instagram.com/casamecha__/" target="_blank" rel="noopener noreferrer" class="gal-pill gp-m">@casamecha__</a>
+          <a href="https://www.instagram.com/casalupe__/" target="_blank" rel="noopener noreferrer" class="gal-pill gp-l">@casalupe__</a>
+        </div>
+      </div>
+    </header>
+    <div class="track" id="track">
+      <figure class="ph r"><img src="img/tacos-casa-mecha.webp" alt="Dos tacos de Casa Mecha servidos en su caja" width="680" height="1020" loading="lazy" decoding="async"><figcaption>Tacos Mecha</figcaption></figure>
+      <figure class="ph b"><img src="img/gofre-helado-cookies.webp" alt="Gofre con helado de cookies, galletas y sirope de chocolate" width="574" height="1020" loading="lazy" decoding="async"><figcaption>Gofre con helado</figcaption></figure>
+      <figure class="ph r"><img src="img/brioches-casa-mecha.webp" alt="Dos brioches tostados rellenos de carne y salsa" width="1360" height="907" loading="lazy" decoding="async"><figcaption>Brioches</figcaption></figure>
+      <figure class="ph b"><img src="img/berlina-helado-pistacho.webp" alt="Berlina rellena de helado de pistacho con barrita de chocolate" width="680" height="1020" loading="lazy" decoding="async"><figcaption>Berlina con helado</figcaption></figure>
+      <figure class="ph r"><img src="img/brioche-carne-desmechada.webp" alt="Brioche abierto con carne desmechada, salsa y cebolla crujiente" width="1360" height="907" loading="lazy" decoding="async"><figcaption>Brioche de carne</figcaption></figure>
+      <figure class="ph b"><img src="img/gofre-en-palo-chocolate.webp" alt="Gofre en palo con chocolate y crocanti" width="680" height="1020" loading="lazy" decoding="async"><figcaption>Gofre en palo</figcaption></figure>
+      <figure class="ph r"><img src="img/brioche-pulled-casa-mecha.webp" alt="Montaje de un brioche con carne desmechada en Casa Mecha" width="680" height="1020" loading="lazy" decoding="async"><figcaption>Hecho al momento</figcaption></figure>
+      <figure class="ph b"><img src="img/fachada-casa-lupe-tarrina-helado.webp" alt="Tarrina de helado frente a la fachada de Casa Mecha y Casa Lupe" width="1360" height="1020" loading="lazy" decoding="async"><figcaption>Tarrina con topping</figcaption></figure>
+    </div>
+    <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+  </div>
+</section>
+
+<!-- ============ EL LOCAL ============ -->
+<section class="casa" id="local" aria-labelledby="local-title">
+  <div class="wrap casa-grid">
+    <div class="casa-photo reveal">
+      <img src="img/interior-local-casa-mecha-casa-lupe.webp" alt="Interior del local: barra de azulejos rojos, azules y amarillos, pared estampada con tomates y mural de la Dama de Elche" width="1360" height="1020" loading="lazy" decoding="async">
+    </div>
+    <div class="casa-copy reveal">
+      <h2 class="big" id="local-title">Azulejos, tomates y la Dama de Elche.</h2>
+      <p class="lead">La barra está revestida de azulejo rojo, azul y amarillo, los colores de las dos casas. Una de las paredes está empapelada de tomates y, junto a la caja, un mural de la Dama de Elche entre palmeras.</p>
+      <p class="casa-note">Carrer Empedrat, 21 · Elche<br>De miércoles a domingo, desde las 19:00</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VISÍTANOS ============ -->
+<section class="visit" id="visitanos" aria-labelledby="visit-title">
+  <div class="wrap">
+    <header class="sec-head center reveal">
+      <h2 class="big" id="visit-title">Visítanos</h2>
+      <p class="lead">Casa Mecha y Casa Lupe comparten fachada en el centro de Elche. Abrimos de miércoles a domingo desde las 19:00.</p>
+      <address class="visit-info">
+        <a href="https://share.google/Yfrjxu4EgjBZK6gms" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="2.6" fill="currentColor"/></svg>Carrer Empedrat, 21 · 03203 Elche (Alicante)</a>
+        <a href="tel:+34603088158"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>603 08 81 58</a>
+      </address>
+    </header>
+
+    <div class="doors">
+      <article class="door d-m reveal">
+        <img src="img/fachada-casa-mecha.webp" alt="Fachada roja de Casa Mecha" width="765" height="1020" loading="lazy" decoding="async" class="door-img">
+        <div class="door-body">
+          <h3 class="sr-only">Casa Mecha</h3>
+          <img src="img/brand/mecha-logo-cream.png" alt="Logotipo de Casa Mecha" width="1360" height="656" loading="lazy" class="door-logo">
+          <p>Tacos, brioches y totopos.</p>
+          <div class="hours" data-hours='{"3":[19,24],"4":[19,24],"5":[19,26],"6":[19,26],"0":[19,24]}'>
+          <h4 class="hours-h">Horario</h4>
+          <dl>
+            <div data-d="1" class="closed"><dt>Lunes</dt><dd>Cerrado</dd></div>
+            <div data-d="2" class="closed"><dt>Martes</dt><dd>Cerrado</dd></div>
+            <div data-d="3"><dt>Miércoles</dt><dd>19:00 – 24:00</dd></div>
+            <div data-d="4"><dt>Jueves</dt><dd>19:00 – 24:00</dd></div>
+            <div data-d="5"><dt>Viernes</dt><dd>19:00 – 02:00</dd></div>
+            <div data-d="6"><dt>Sábado</dt><dd>19:00 – 02:00</dd></div>
+            <div data-d="0"><dt>Domingo</dt><dd>19:00 – 24:00</dd></div>
+          </dl>
+        </div>
+          <div class="door-actions">
+            <a href="https://share.google/Yfrjxu4EgjBZK6gms" target="_blank" rel="noopener noreferrer" class="btn">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="2.6" fill="currentColor"/></svg>
+              Cómo llegar
+            </a>
+            <a href="https://www.instagram.com/casamecha__/" target="_blank" rel="noopener noreferrer" class="btn ghost">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.3" fill="currentColor"/></svg>
+              @casamecha__
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="door d-l reveal">
+        <img src="img/fachada-casa-lupe-tarrina-helado.webp" alt="Fachada azul de Casa Lupe junto a Casa Mecha" width="1360" height="1020" loading="lazy" decoding="async" class="door-img">
+        <div class="door-body">
+          <h3 class="sr-only">Casa Lupe</h3>
+          <img src="img/brand/lupe-logo-cream.png" alt="Logotipo de Casa Lupe" width="1360" height="765" loading="lazy" class="door-logo">
+          <p>Helados, granizados y repostería.</p>
+          <div class="hours" data-hours='{"3":[19,24],"4":[19,24],"5":[19,24],"6":[19,24],"0":[19,24]}'>
+          <h4 class="hours-h">Horario</h4>
+          <dl>
+            <div data-d="1" class="closed"><dt>Lunes</dt><dd>Cerrado</dd></div>
+            <div data-d="2" class="closed"><dt>Martes</dt><dd>Cerrado</dd></div>
+            <div data-d="3"><dt>Miércoles</dt><dd>19:00 – 24:00</dd></div>
+            <div data-d="4"><dt>Jueves</dt><dd>19:00 – 24:00</dd></div>
+            <div data-d="5"><dt>Viernes</dt><dd>19:00 – 24:00</dd></div>
+            <div data-d="6"><dt>Sábado</dt><dd>19:00 – 24:00</dd></div>
+            <div data-d="0"><dt>Domingo</dt><dd>19:00 – 24:00</dd></div>
+          </dl>
+        </div>
+          <div class="door-actions">
+            <a href="https://share.google/ymw1GrEiolH3452Vb" target="_blank" rel="noopener noreferrer" class="btn">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="2.6" fill="currentColor"/></svg>
+              Cómo llegar
+            </a>
+            <a href="https://www.instagram.com/casalupe__/" target="_blank" rel="noopener noreferrer" class="btn ghost">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.3" fill="currentColor"/></svg>
+              @casalupe__
+            </a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="foot">
+  <div class="foot-half fh-m"></div>
+  <div class="foot-half fh-l"><div class="flame flame-v"></div></div>
+  <div class="foot-inner">
+    <div class="foot-logos">
+      <img src="img/brand/mecha-stamp.png" alt="Casa Mecha" width="952" height="1020" loading="lazy">
+      <img src="img/brand/lupe-stamp.png" alt="Casa Lupe" width="973" height="1020" loading="lazy">
+    </div>
+    <p class="foot-desc">Tacos, brioches y totopos · Helados, granizados y repostería</p>
+    <nav class="foot-links" aria-label="Pie de página">
+      <a href="#carta">Carta</a>
+      <a href="#galeria">Galería</a>
+      <a href="#visitanos">Visítanos</a>
+      <a href="https://www.instagram.com/casamecha__/" target="_blank" rel="noopener noreferrer">Instagram Casa Mecha</a>
+      <a href="https://www.instagram.com/casalupe__/" target="_blank" rel="noopener noreferrer">Instagram Casa Lupe</a>
+    </nav>
+    <address class="foot-nap">Carrer Empedrat, 21 · 03203 Elche (Alicante) · <a href="tel:+34603088158">603 08 81 58</a></address>
+    <p class="foot-small">© 2026 Casa Mecha · Casa Lupe</p>
+  </div>
+</footer>
+
+<!-- Vista previa flotante de la carta -->
+<div class="peek" id="peek" aria-hidden="true"><img alt=""></div>
+
+<script src="main.js" defer></script>
+</body>
+</html>
