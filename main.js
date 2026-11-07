@@ -36,14 +36,8 @@
   /* ---------- hero split ---------- */
   const hero = $('.hero');
   let split = 50, target = 50;
-  if (!reduce) {
-    hero.addEventListener('pointermove', e => {
-      if (isMobile() || e.pointerType === 'touch') return;
-      const r = hero.getBoundingClientRect();
-      target = 50 + (0.5 - (e.clientX - r.left) / r.width) * 26;
-    });
-    hero.addEventListener('pointerleave', () => target = 50);
-  }
+  // La costura se queda fija en el centro. Si se pide menos movimiento, los videos no se reproducen.
+  if (reduce) $$('.hx video').forEach(v => { v.autoplay = false; v.pause(); });
   const heroStamps = $$('.hero-inner');
 
   /* ---------- marquees (duplicate for seamless loop) ---------- */

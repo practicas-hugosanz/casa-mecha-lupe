@@ -571,3 +571,150 @@ img{height:auto}
   .nav-brand .nb-text .t-m{font-size:1.08rem}
   .nav-brand .nb-text .t-l{font-size:1.26rem}
 }
+
+/* v10: hero — toldo visible, datos prácticos y pedido online */
+.has-awning .nav{top:54px}
+.has-awning .nav.scrolled{top:12px}
+.nav-links .nl-shop{display:none}
+@media (max-width:1020px){ .nav-links.open .nl-shop{display:block;margin-top:6px;text-align:center;font-family:var(--f-cond);letter-spacing:.08em;font-size:1.25rem;color:var(--cream) !important;background:linear-gradient(100deg,var(--red) 0 50%,var(--blue) 50% 100%)} }
+.hero-inner{padding-top:150px}
+.badge{top:auto;bottom:clamp(96px,13vh,130px);display:block;border-radius:50%;transition:transform .3s var(--ease)}
+.badge svg{display:block;width:100%;height:auto;animation:spin 18s linear infinite}
+.badge:hover{transform:scale(1.06) rotate(-6deg)}
+.badge{animation:none}
+.badge .badge-mid{font-size:52px}
+.hero-bar{
+  position:absolute;left:50%;bottom:22px;transform:translateX(-50%);z-index:6;
+  display:flex;align-items:center;gap:6px 18px;padding:6px 6px 6px 22px;border-radius:999px;
+  background:var(--cream);color:var(--ink);box-shadow:0 18px 40px -12px rgba(0,0,0,.35);white-space:nowrap;
+}
+.hb-info{display:flex;gap:18px;font-weight:500;font-size:.95rem}
+.hb-info span{display:inline-flex;align-items:center;gap:7px}
+.hb-info span:first-child svg{color:var(--red)} .hb-info span:last-child svg{color:var(--blue-d)}
+.hb-cta{
+  display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-family:var(--f-cond);font-size:1.2rem;letter-spacing:.08em;
+  padding:11px 20px 10px;border-radius:999px;color:var(--cream);
+  background:linear-gradient(100deg,var(--red) 0 50%,var(--blue) 50% 100%);background-size:220% 100%;background-position:0 0;
+  transition:background-position .5s var(--ease)
+}
+.hb-cta:hover{background-position:100% 0}
+.hb-cta svg{transition:transform .3s var(--ease)} .hb-cta:hover svg{transform:translateX(3px)}
+@media (max-width:760px){
+  .has-awning .nav{top:40px}
+  .hero-inner{padding-top:110px}
+  .h-lupe .hero-inner{padding-bottom:110px}
+  .hero-bar{left:16px;right:16px;bottom:16px;transform:none;justify-content:space-between;padding:6px 6px 6px 16px;white-space:normal}
+  .hb-info{flex-direction:column;gap:2px;font-size:.8rem;line-height:1.25}
+  .hb-info svg{width:13px;height:13px}
+  .hb-cta{font-size:1.05rem;padding:10px 14px 9px;white-space:nowrap}
+  .hb-cta svg{display:none}
+}
+.badge{bottom:18px;width:clamp(96px,8.5vw,124px)}
+@media (max-width:900px){ .badge{display:none} }
+@media (max-width:760px){
+  .hb-x,.hb-info .hb-x{display:none}
+  .hb-info span{white-space:nowrap}
+  .hb-info{font-size:.85rem}
+  .hb-cta{padding:11px 18px 10px;font-size:1.15rem}
+  .hb-cta svg{display:inline}
+}
+
+/* v11: acceso a la tienda desde la carta */
+.carta-order{position:relative;z-index:3;text-align:center;margin-top:clamp(30px,5vw,56px)}
+.carta-order .hb-cta{background:var(--cream);color:var(--ink);font-size:1.3rem;padding:14px 26px 13px;box-shadow:0 14px 30px -12px rgba(0,0,0,.4);transition:transform .2s}
+.carta-order .hb-cta:hover{transform:translateY(-2px)}
+
+/* v12: hero con fotografía — menos adornos, más apetito */
+.hx{background:var(--ink)}
+.hx-half{position:absolute;top:0;bottom:0}
+.hx-m{left:0;width:var(--split);background:var(--red);z-index:1}
+.hx-l{left:var(--split);right:0;background:var(--blue);z-index:2}
+.hx-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hx-m .hx-photo{object-position:50% 40%}
+.hx-l .hx-photo{object-position:50% 45%}
+.hx-half::after{content:"";position:absolute;inset:0;pointer-events:none}
+.hx-m::after{background:linear-gradient(to top,var(--red) 0,var(--red) 24%,rgba(177,38,42,.55) 46%,rgba(177,38,42,0) 70%)}
+.hx-l::after{background:linear-gradient(to top,var(--blue) 0,var(--blue) 24%,rgba(62,151,221,.55) 46%,rgba(62,151,221,0) 70%)}
+.hx .flame{z-index:3;animation:none}
+.hx-brand{position:absolute;left:0;right:0;bottom:clamp(150px,21vh,200px);z-index:4;display:flex;flex-direction:column;align-items:center;gap:6px;padding:0 24px;text-align:center}
+.hx-logo{width:clamp(190px,21vw,300px);height:auto}
+.hx-items{font-family:var(--f-cond);font-size:clamp(1.05rem,1.3vw,1.3rem);letter-spacing:.2em;opacity:.95}
+.hx-title{
+  position:absolute;left:50%;bottom:clamp(90px,11vh,104px);transform:translateX(-50%);z-index:6;
+  font-family:var(--f-cond);font-weight:400;font-size:clamp(1.9rem,3.4vw,3.2rem);line-height:1;letter-spacing:.03em;
+  white-space:nowrap;color:var(--cream);text-shadow:0 2px 18px rgba(0,0,0,.18)
+}
+@media (max-width:760px){
+  .hx-m{width:auto;right:0;bottom:auto;height:50%}
+  .hx-l{left:0;top:50%}
+  .hx .flame-h{top:-30px}
+  .hx-m::after{background:linear-gradient(to top,var(--red) 0,var(--red) 14%,rgba(177,38,42,.5) 40%,rgba(177,38,42,0) 64%)}
+  .hx-l::after{background:linear-gradient(to top,var(--blue) 0,var(--blue) 34%,rgba(62,151,221,.5) 56%,rgba(62,151,221,0) 76%)}
+  .hx-m .hx-brand{bottom:44px}
+  .hx-l .hx-brand{bottom:122px}
+  .hx-logo{width:min(46vw,190px)}
+  .hx-items{font-size:.95rem;letter-spacing:.16em}
+  .hx-title{bottom:90px;font-size:clamp(1.25rem,6vw,1.6rem);letter-spacing:.02em}
+}
+.hb-info span span{display:inline}
+.hx-m::after{background:linear-gradient(to top,var(--red) 0,var(--red) 30%,rgba(177,38,42,.82) 46%,rgba(177,38,42,.3) 62%,rgba(177,38,42,0) 76%)}
+.hx-l::after{background:linear-gradient(to top,var(--blue) 0,var(--blue) 30%,rgba(62,151,221,.82) 46%,rgba(62,151,221,.3) 62%,rgba(62,151,221,0) 76%)}
+@media (max-width:760px){
+  .hx-m::after{background:linear-gradient(to top,var(--red) 0,var(--red) 18%,rgba(177,38,42,.8) 38%,rgba(177,38,42,0) 66%)}
+  .hx-l::after{background:linear-gradient(to top,var(--blue) 0,var(--blue) 40%,rgba(62,151,221,.82) 56%,rgba(62,151,221,0) 80%)}
+}
+
+/* v13: la ola es el borde de la foto de Lupe, no una franja azul encima */
+.hx .flame{display:none}
+.hx-l{
+  left:calc(var(--split) - 78px);
+  -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 160' preserveAspectRatio='none'%3E%3Cpath fill='%23000' d='M80 0H46C20 20 10 44 32 66C48 82 14 100 24 124C30 140 50 146 46 160H80Z'/%3E%3C/svg%3E") 0 0/80px 160px repeat-y,linear-gradient(#000 0 0) 78px 0/calc(100% - 78px) 100% no-repeat;
+          mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 160' preserveAspectRatio='none'%3E%3Cpath fill='%23000' d='M80 0H46C20 20 10 44 32 66C48 82 14 100 24 124C30 140 50 146 46 160H80Z'/%3E%3C/svg%3E") 0 0/80px 160px repeat-y,linear-gradient(#000 0 0) 78px 0/calc(100% - 78px) 100% no-repeat;
+}
+.hx-l .hx-brand{padding-left:102px}
+@media (max-width:760px){
+  .hx-l{
+    left:0;top:calc(50% - 30px);
+    -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 40' preserveAspectRatio='none'%3E%3Cpath fill='%23000' d='M0 40V22C20 4 44 0 66 16C82 28 100 2 124 10C140 15 146 24 160 22V40Z'/%3E%3C/svg%3E") 0 0/160px 32px repeat-x,linear-gradient(#000 0 0) 0 30px/100% calc(100% - 30px) no-repeat;
+            mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 40' preserveAspectRatio='none'%3E%3Cpath fill='%23000' d='M0 40V22C20 4 44 0 66 16C82 28 100 2 124 10C140 15 146 24 160 22V40Z'/%3E%3C/svg%3E") 0 0/160px 32px repeat-x,linear-gradient(#000 0 0) 0 30px/100% calc(100% - 30px) no-repeat;
+  }
+  .hx-l .hx-brand{padding-left:24px}
+  .hx-m{height:calc(50% + 2px)}
+}
+
+/* v14: videos de fondo y costura centrada */
+.hx-m .hx-photo,.hx-l .hx-photo{object-position:50% 50%}
+.hx-m{width:50%}
+.hx-l{left:calc(50% - 33px)}
+.hx-l .hx-brand{padding-left:57px}
+@media (max-width:760px){
+  .hx-m{width:auto;height:calc(50% + 24px)}
+  .hx-l{left:0;top:calc(50% - 12px)}
+  .hx-l .hx-brand{padding-left:24px}
+  .hx-m .hx-brand{bottom:60px}
+}
+/* v15: el vídeo de Mecha pasa por debajo de la ola (sin huecos oscuros) */
+.hx{background:var(--red)}
+.hx-m{width:calc(50% + 60px)}
+.hx-m .hx-brand{padding-right:84px}
+@media (max-width:760px){
+  .hx-m{width:auto}
+  .hx-m .hx-brand{padding-right:24px}
+}
+
+/* v16: título de galería en blanco */
+.gal-title{background:none;-webkit-background-clip:border-box;background-clip:border-box;color:#fff;-webkit-text-fill-color:#fff}
+
+/* v17: el logo de Lupe tiene letras más altas en el PNG; se escala al 82 % para igualar la cara con Mecha */
+.d-l .door-logo{width:min(262px,74%)}
+.hx-l .hx-logo{width:clamp(156px,17.2vw,246px)}
+@media (max-width:760px){ .hx-l .hx-logo{width:min(37.7vw,156px)} }
+
+/* v18: ola del footer centrada (rojo de fondo entero, el azul empieza tras la ola) */
+.foot .fh-m{width:100%}
+.foot .fh-l{width:auto;left:calc(50% + 46px)}
+.foot .fh-l .flame-v{left:-79px}
+@media (max-width:760px){ .foot .fh-l{left:50%} }
+/* sin línea fina junto a la ola: el borde del elemento queda lejos del dibujo */
+.foot .fh-l .flame-v{left:-119px;width:120px;background-position:40px 0;animation:flameYo 3.2s linear infinite}
+@keyframes flameYo{from{background-position:40px 0}to{background-position:40px -160px}}

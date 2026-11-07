@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pedir online para recoger | Casa Mecha y Casa Lupe, Elche</title>
+<meta name="description" content="Haz tu pedido de tacos, brioches, totopos, helados, granizados y repostería y recógelo en Carrer Empedrat, 21 (Elche). Pagas al recoger.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://practicas-hugosanz.github.io/casa-mecha-lupe/tienda.html">
+<meta name="theme-color" content="#B1262A">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<meta property="og:site_name" content="Casa Mecha y Casa Lupe">
+<meta property="og:title" content="Pedir online | Casa Mecha y Casa Lupe">
+<meta property="og:description" content="Pide tacos, brioches, helados y repostería y recógelo en el local. Pagas al recoger.">
+<meta property="og:url" content="https://practicas-hugosanz.github.io/casa-mecha-lupe/tienda.html">
+<meta property="og:image" content="https://practicas-hugosanz.github.io/casa-mecha-lupe/img/og-casa-mecha-casa-lupe.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="icons/favicon-48.png">
+<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bowlby+One&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Lilita+One&family=Sacramento&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="tienda.css">
+</head>
+<body class="has-awning shop-page">
+
+<a class="skip" href="#menu">Saltar a los productos</a>
+
+<header class="nav" id="nav">
+  <a href="index.html" class="nav-brand" aria-label="Casa Mecha y Casa Lupe, inicio">
+    <img src="icons/logo.png?v=3" alt="" class="nb-logo" width="36" height="36">
+    <span class="nb-text"><b class="t-m">MECHA</b><i>/</i><b class="t-l">LUPE</b></span>
+  </a>
+  <nav class="nav-links" id="navLinks" aria-label="Principal">
+    <a href="index.html">Inicio</a>
+    <a href="index.html#carta">Carta</a>
+    <a href="index.html#local">El local</a>
+    <a href="index.html#visitanos">Visítanos</a>
+  </nav>
+  <button class="nav-cta nav-cart" id="navCart" type="button" aria-controls="cart">Mi pedido <span class="nc-count" data-count>0</span></button>
+  <button class="nav-burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks"><span></span><span></span></button>
+</header>
+
+<main>
+  <section class="shop-hero" aria-labelledby="shop-title">
+    <div class="awning" data-awning></div>
+    <div class="sh-inner">
+      <img src="img/brand/mecha-icon.png" alt="" class="sh-face sh-m" width="484" height="603">
+      <div class="sh-copy">
+        <p class="sh-kicker">pide y recoge</p>
+        <h1 class="sh-title" id="shop-title">Pedido online</h1>
+        <p class="sh-lead">Elige lo que te apetece de las dos casas, envíanos el pedido y pásate a recogerlo por Carrer Empedrat, 21. Pagas en el local.</p>
+        <ol class="sh-steps">
+          <li><b>1</b>Añade productos</li>
+          <li><b>2</b>Elige hora de recogida</li>
+          <li><b>3</b>Envía el pedido por WhatsApp</li>
+        </ol>
+      </div>
+      <img src="img/brand/lupe-icon.png" alt="" class="sh-face sh-l" width="519" height="602">
+    </div>
+  </section>
+
+  <nav class="cats" id="cats" aria-label="Categorías"></nav>
+
+  <div class="shop wrap">
+    <div class="menu" id="menu">
+      <noscript><p class="noscript">Para pedir online necesitas activar JavaScript. También puedes llamarnos al <a href="tel:+34603088158">603 08 81 58</a>.</p></noscript>
+    </div>
+
+    <aside class="cart" id="cart" aria-labelledby="cart-title" tabindex="-1">
+      <div class="cart-head">
+        <h2 id="cart-title">Tu pedido</h2>
+        <button class="cart-close" id="cartClose" type="button" aria-label="Cerrar pedido">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+
+      <div class="cart-scroll">
+        <div class="cart-empty" id="cartEmpty">
+          <img src="img/brand/lupe-face-blue.png" alt="" width="90" height="103" loading="lazy">
+          <p>Todavía no has añadido nada.<br>Empieza por unos tacos o un helado.</p>
+        </div>
+        <ul class="cart-lines" id="cartLines"></ul>
+
+        <div class="cart-total" id="cartTotalRow" hidden>
+          <span>Total</span><b id="cartTotal">0,00 €</b>
+        </div>
+
+        <form class="checkout" id="checkout" novalidate hidden>
+          <h3 class="co-h">Recogida</h3>
+          <div class="co-row">
+            <label class="fld"><span>Día</span>
+              <select id="coDay" name="day" required></select>
+            </label>
+            <label class="fld"><span>Hora</span>
+              <select id="coTime" name="time" required></select>
+            </label>
+          </div>
+          <label class="fld"><span>Nombre</span>
+            <input id="coName" name="name" type="text" autocomplete="given-name" required maxlength="60">
+          </label>
+          <label class="fld"><span>Teléfono</span>
+            <input id="coPhone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required maxlength="20" placeholder="600 000 000">
+          </label>
+          <label class="fld"><span>Notas <i>(opcional)</i></span>
+            <textarea id="coNotes" name="notes" rows="2" maxlength="300" placeholder="Toppings, alergias, sin cebolla…"></textarea>
+          </label>
+          <p class="co-error" id="coError" role="alert"></p>
+          <button class="co-send" type="submit">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+            Enviar pedido por WhatsApp
+          </button>
+          <p class="co-note">Pagas al recoger. Te confirmamos el pedido por WhatsApp; si no te llega respuesta, llámanos al <a href="tel:+34603088158">603 08 81 58</a>.</p>
+        </form>
+
+        <div class="sent" id="sent" hidden>
+          <p class="sent-h">¡Ya casi está!</p>
+          <p>Se ha abierto WhatsApp con tu pedido. <b>Envía el mensaje</b> para que lo recibamos y te lo confirmamos enseguida.</p>
+          <div class="sent-actions">
+            <a class="btn-s" id="sentAgain" href="#" target="_blank" rel="noopener noreferrer">Abrir WhatsApp otra vez</a>
+            <button class="btn-s ghost" id="sentNew" type="button">Hacer otro pedido</button>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<button class="cart-bar" id="cartBar" type="button" aria-controls="cart" hidden>
+  <span class="cb-count" data-count>0</span>
+  <span class="cb-label">Ver mi pedido</span>
+  <b class="cb-total" id="cartBarTotal">0,00 €</b>
+</button>
+<div class="scrim" id="scrim" hidden></div>
+<p class="toast" id="toast" role="status" aria-live="polite"></p>
+
+<footer class="foot">
+  <div class="foot-half fh-m"></div>
+  <div class="foot-half fh-l"><div class="flame flame-v"></div></div>
+  <div class="foot-inner">
+    <div class="foot-logos">
+      <img src="img/brand/mecha-stamp.png" alt="Casa Mecha" width="952" height="1020" loading="lazy">
+      <img src="img/brand/lupe-stamp.png" alt="Casa Lupe" width="973" height="1020" loading="lazy">
+    </div>
+    <p class="foot-desc">Tacos, brioches y totopos · Helados, granizados y repostería</p>
+    <nav class="foot-links" aria-label="Pie de página">
+      <a href="index.html">Inicio</a>
+      <a href="index.html#carta">Carta</a>
+      <a href="index.html#visitanos">Visítanos</a>
+      <a href="https://www.instagram.com/casamecha__/" target="_blank" rel="noopener noreferrer">Instagram Casa Mecha</a>
+      <a href="https://www.instagram.com/casalupe__/" target="_blank" rel="noopener noreferrer">Instagram Casa Lupe</a>
+    </nav>
+    <address class="foot-nap">Carrer Empedrat, 21 · 03203 Elche (Alicante) · <a href="tel:+34603088158">603 08 81 58</a></address>
+    <p class="foot-small">© 2026 Casa Mecha · Casa Lupe</p>
+  </div>
+</footer>
+
+<script src="tienda.js" defer></script>
+</body>
+</html>

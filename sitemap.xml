@@ -12,4 +12,10 @@
     <image:image><image:loc>https://practicas-hugosanz.github.io/casa-mecha-lupe/img/berlina-helado-pistacho.webp</image:loc></image:image>
     <image:image><image:loc>https://practicas-hugosanz.github.io/casa-mecha-lupe/img/interior-local-casa-mecha-casa-lupe.webp</image:loc></image:image>
   </url>
+  <url>
+    <loc>https://practicas-hugosanz.github.io/casa-mecha-lupe/tienda.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
