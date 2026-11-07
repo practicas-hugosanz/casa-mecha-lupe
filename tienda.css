@@ -197,3 +197,7 @@
   .cb-thumb{width:64px;height:64px;border-radius:16px}
 }
 @media (prefers-reduced-motion:reduce){ .cart{transition:none} }
+
+/* sin toldo arriba: menos aire sobre el título */
+.shop-hero{padding-top:124px}
+@media (max-width:1020px){ .shop-hero{padding-top:100px} }
